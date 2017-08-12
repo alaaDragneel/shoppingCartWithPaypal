@@ -1,0 +1,37 @@
+/* start the product view */
+.thumbnail {
+	box-shadow: 1px 1px 30px #999;
+}
+.thumbnail img {
+	height: 250px;
+	width: 100%;
+}
+
+.thumbnail .desc {
+	color: #7f7f7f;
+}
+.thumbnail .price {
+	font-weight: bold;
+	font-size: 16px
+}
+
+/* end the product view */
+
+/* start cart*/
+.cart {
+	box-shadow: 10px 10px 30px #999;
+}
+.cart h2 {
+	margin: 0;
+}
+.cart table thead {
+	color: #fff;
+	background-color: #555;
+}
+.cart img {
+	max-height: 65%;
+	width: 100%;
+	margin: 5px auto;
+	box-shadow: 1px 1px 30px #999;
+
+}

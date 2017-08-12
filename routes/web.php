@@ -14,3 +14,20 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+Route::get('/products', 'ProductsController@index');
+
+Route::get('/card', 'ProductsController@getCard');
+
+Route::get('/products/card/add/{product_id}', [
+    'uses' => 'ProductsController@addToCard',
+    'as' => 'add.to.card'
+]);
+
+Route::post('/checkOut', 'PayController@checkOut');
+
+Route::get('/successCharge', 'PayController@successCharge');
+Route::get('/errorCharge', 'PayController@errorCharge');
